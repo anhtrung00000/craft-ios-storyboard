@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TitleView" customModule="craft" customModuleProvider="target">
+            <connections>
+                <outlet property="cart" destination="URh-zt-dZZ" id="XYe-ea-Wz7"/>
+                <outlet property="label" destination="hYc-Af-BBU" id="enR-Rs-gN8"/>
+                <outlet property="navigate" destination="SaL-1x-ReM" id="Upq-4r-XtG"/>
+                <outlet property="view" destination="D4u-gJ-yUa" id="nur-Ww-Itt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="D4u-gJ-yUa">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rSR-hv-8K3">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaL-1x-ReM">
+                            <rect key="frame" x="0.0" y="60" width="35" height="50"/>
+                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="N9I-x4-hep"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Craft" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYc-Af-BBU">
+                            <rect key="frame" x="45" y="56.5" width="304" height="57.5"/>
+                            <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URh-zt-dZZ">
+                            <rect key="frame" x="359" y="65" width="55" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="KZA-i5-ZNJ"/>
+                                <constraint firstAttribute="width" constant="55" id="lIa-TQ-jMc"/>
+                            </constraints>
+                            <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <state key="normal" image="cart" catalog="system">
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                            </state>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="rSR-hv-8K3" firstAttribute="top" secondItem="D4u-gJ-yUa" secondAttribute="top" id="0ae-i3-bPP"/>
+                <constraint firstItem="rSR-hv-8K3" firstAttribute="leading" secondItem="JMN-Kb-0bF" secondAttribute="leading" id="T1u-Oh-aep"/>
+                <constraint firstItem="JMN-Kb-0bF" firstAttribute="bottom" secondItem="rSR-hv-8K3" secondAttribute="bottom" id="djz-7P-YTG"/>
+                <constraint firstItem="JMN-Kb-0bF" firstAttribute="trailing" secondItem="rSR-hv-8K3" secondAttribute="trailing" id="nPy-wO-KUX"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="JMN-Kb-0bF"/>
+            <point key="canvasLocation" x="-30.434782608695656" y="-182.14285714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart" catalog="system" width="64" height="52"/>
+    </resources>
+</document>
