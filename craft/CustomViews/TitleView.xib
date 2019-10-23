@@ -24,23 +24,23 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaL-1x-ReM">
-                            <rect key="frame" x="0.0" y="60" width="35" height="50"/>
-                            <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <rect key="frame" x="0.0" y="67.5" width="35" height="35"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="35" id="N9I-x4-hep"/>
+                                <constraint firstAttribute="height" constant="35" id="thr-1g-UF2"/>
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Craft" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYc-Af-BBU">
-                            <rect key="frame" x="45" y="56.5" width="304" height="57.5"/>
+                            <rect key="frame" x="45" y="56.5" width="319" height="57.5"/>
                             <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="URh-zt-dZZ">
-                            <rect key="frame" x="359" y="65" width="55" height="40"/>
+                            <rect key="frame" x="374" y="65" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="KZA-i5-ZNJ"/>
-                                <constraint firstAttribute="width" constant="55" id="lIa-TQ-jMc"/>
+                                <constraint firstAttribute="width" constant="40" id="lIa-TQ-jMc"/>
                             </constraints>
                             <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                             <state key="normal" image="cart" catalog="system">
