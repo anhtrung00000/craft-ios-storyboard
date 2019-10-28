@@ -28,6 +28,7 @@
 		3B4D9241235EEA8C00B973CD /* PremetiveExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D9240235EEA8C00B973CD /* PremetiveExtension.swift */; };
 		3B4D9244235EFA1700B973CD /* ProductLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D9243235EFA1700B973CD /* ProductLayout.swift */; };
 		3B7D74FD235F3AAF0016BF9E /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7D74FC235F3AAF0016BF9E /* AnimationViewController.swift */; };
+		3B7E9AAE23618FE100894EE5 /* PopAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E9AAD23618FE100894EE5 /* PopAnimation.swift */; };
 		3BA8AE65235641230014D342 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8AE53235641210014D342 /* Montserrat-SemiBold.ttf */; };
 		3BA8AE66235641230014D342 /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8AE54235641210014D342 /* Montserrat-ThinItalic.ttf */; };
 		3BA8AE67235641230014D342 /* Montserrat-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8AE55235641210014D342 /* Montserrat-ExtraLightItalic.ttf */; };
@@ -95,6 +96,7 @@
 		3B4D9240235EEA8C00B973CD /* PremetiveExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremetiveExtension.swift; sourceTree = "<group>"; };
 		3B4D9243235EFA1700B973CD /* ProductLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductLayout.swift; sourceTree = "<group>"; };
 		3B7D74FC235F3AAF0016BF9E /* AnimationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		3B7E9AAD23618FE100894EE5 /* PopAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimation.swift; sourceTree = "<group>"; };
 		3BA8AE53235641210014D342 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		3BA8AE54235641210014D342 /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		3BA8AE55235641210014D342 /* Montserrat-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
@@ -253,6 +255,7 @@
 				3BF3BA022358011E00F6A903 /* DetailViewController.swift */,
 				3B0D4CE22359A6C500AAB123 /* RecommendationViewController.swift */,
 				3B7D74FC235F3AAF0016BF9E /* AnimationViewController.swift */,
+				3B7E9AAD23618FE100894EE5 /* PopAnimation.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -443,6 +446,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B4D9244235EFA1700B973CD /* ProductLayout.swift in Sources */,
+				3B7E9AAE23618FE100894EE5 /* PopAnimation.swift in Sources */,
 				3B0E21302355D3D2005C5644 /* ColorExtentions.swift in Sources */,
 				3B0E20FD2355CFF9005C5644 /* CategoryController.swift in Sources */,
 				3B0E20F92355CFF9005C5644 /* AppDelegate.swift in Sources */,

@@ -23,6 +23,9 @@ class DetailViewController: UIViewController {
         pageControl.currentPageIndicatorTintColor = UIColor.FlatColor.Orange.AppPrioty.withAlphaComponent(0.5)
     }
     //MARK: Handlers
+    @IBAction func back(_ sender : Any){
+        navigationController?.popViewController(animated: true)
+    }
 }
 
 extension DetailViewController : UICollectionViewDataSource, UICollectionViewDelegate{
