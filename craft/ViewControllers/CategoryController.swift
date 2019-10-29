@@ -58,7 +58,10 @@ extension CategoryController : UICollectionViewDataSource, UICollectionViewDeleg
 }
 extension CategoryController : ProductLayoutDelegate {
     func collectionView(_ collectionView: UICollectionView, heightForPhotoAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return Product.allProduct()[indexPath.item].image.size.height > 400 ? 400 : Product.allProduct()[indexPath.item].image.size.height
+        let height = Product.allProduct()[indexPath.item].image.size.height
+//
+        return height > 1000 ? height * 0.1 :
+            (height > 500 ? height * 0.2 : height)
     }
     
     

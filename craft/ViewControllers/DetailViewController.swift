@@ -10,15 +10,18 @@ import UIKit
 
 class DetailViewController: BaseViewController {
     //MARK: Properties
-    
+    var photos : [UIImage]!
+    //MARK: Outlets
     @IBOutlet weak var imageGalery: UICollectionView!
     @IBOutlet weak var pageControl: UIPageControl!
     //MARK: Initial
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        photos = Product.allProduct().map({
+            $0.image
+        })
         // Do any additional setup after loading the view.\
-        pageControl.numberOfPages = 10
+        pageControl.numberOfPages = photos.count
         pageControl.currentPage = 0;
         pageControl.currentPageIndicatorTintColor = UIColor.FlatColor.Orange.AppPrioty.withAlphaComponent(0.5)
     }
@@ -30,12 +33,19 @@ class DetailViewController: BaseViewController {
 
 extension DetailViewController : UICollectionViewDataSource, UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return photos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "trungnguyen", for: indexPath)
-        return cell
+        var cell = collectionView.dequeueReusableCell(withReuseIdentifier: "trungnguyen", for: indexPath) as? PhotoCell
+        let image = photos[indexPath.row]
+        guard let cel = cell else {
+            cell = PhotoCell()
+            cell?.image = image
+            return cell!
+        }
+        cel.image = image
+        return cel
     }
 }
 
@@ -46,14 +56,35 @@ extension DetailViewController : UICollectionViewDelegateFlowLayout{
 }
 extension DetailViewController : UIScrollViewDelegate{
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        print(imageGalery.visibleCells.startIndex)
-        print(imageGalery.visibleCells.startIndex)
-        print("------")
-        for cell in imageGalery.visibleCells {
-            if let indexPath = imageGalery.indexPath(for: cell) {
-                pageControl.currentPage = indexPath.row ?? 0
-                break
-            }
-        }
+//        print("------st \(scrollView.contentOffset)")
+//        print(imageGalery.visibleCells.startIndex)
+//        print(imageGalery.visibleCells.endIndex)
+//
+//        for cell in imageGalery.visibleCells {
+//            if let indexPath = imageGalery.indexPath(for: cell) {
+//                print(indexPath.row)
+//                print("------")
+//                pageControl.currentPage = indexPath.row ?? 0
+//                break
+//            }
+//        }
+        print ("3scrollViewDidEndDragging")
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        print ("14scrollViewDidScroll")
+    }
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+            print ("scrollViewWillBeginDragging")
+    }
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        print ("5scrollViewDidEndDecelerating")
+        print("------st \(scrollView.contentOffset)")
+        let xOffset = scrollView.contentOffset.x
+        let contentSize = scrollView.contentSize.width
+        let index = (xOffset * CGFloat(self.photos!.count)) / contentSize
+        pageControl.currentPage = Int(index) ?? 0
+    }
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        print ("2scrollViewWillEndDragging")
     }
 }
