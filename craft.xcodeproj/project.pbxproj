@@ -48,6 +48,7 @@
 		3BA8AE75235641230014D342 /* Montserrat-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8AE63235641230014D342 /* Montserrat-Italic.ttf */; };
 		3BA8AE76235641230014D342 /* Montserrat-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BA8AE64235641230014D342 /* Montserrat-BlackItalic.ttf */; };
 		3BA8AE79235648D20014D342 /* UIButtonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA8AE78235648D20014D342 /* UIButtonExtention.swift */; };
+		3BDE3D1E2366C483007BC297 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BDE3D1D2366C483007BC297 /* BaseViewController.swift */; };
 		3BF3BA032358011E00F6A903 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3BA022358011E00F6A903 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -116,6 +117,7 @@
 		3BA8AE63235641230014D342 /* Montserrat-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Italic.ttf"; sourceTree = "<group>"; };
 		3BA8AE64235641230014D342 /* Montserrat-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-BlackItalic.ttf"; sourceTree = "<group>"; };
 		3BA8AE78235648D20014D342 /* UIButtonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtention.swift; sourceTree = "<group>"; };
+		3BDE3D1D2366C483007BC297 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		3BF3BA022358011E00F6A903 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -256,6 +258,7 @@
 				3B0D4CE22359A6C500AAB123 /* RecommendationViewController.swift */,
 				3B7D74FC235F3AAF0016BF9E /* AnimationViewController.swift */,
 				3B7E9AAD23618FE100894EE5 /* PopAnimation.swift */,
+				3BDE3D1D2366C483007BC297 /* BaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -450,6 +453,7 @@
 				3B0E21302355D3D2005C5644 /* ColorExtentions.swift in Sources */,
 				3B0E20FD2355CFF9005C5644 /* CategoryController.swift in Sources */,
 				3B0E20F92355CFF9005C5644 /* AppDelegate.swift in Sources */,
+				3BDE3D1E2366C483007BC297 /* BaseViewController.swift in Sources */,
 				3BA8AE79235648D20014D342 /* UIButtonExtention.swift in Sources */,
 				3B0E20FB2355CFF9005C5644 /* SceneDelegate.swift in Sources */,
 				3B0D4CE32359A6C500AAB123 /* RecommendationViewController.swift in Sources */,
